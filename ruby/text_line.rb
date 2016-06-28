@@ -13,9 +13,10 @@ class TextLine
       file.write '123'
       file << 'abc'
     end
-    # file content is "abc123"
+    # file content is "abc123abc"
   end
 
 end
 
+TextLine.new.read
 TextLine.new.write
